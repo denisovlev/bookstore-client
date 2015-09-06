@@ -1,1 +1,11 @@
-{{outlet}}
+<ul>
+  {{#each model as |book|}}
+    <a href="#" {{action 'openCheckoutModal' book}}>
+        {{book-item book=book}}
+    </a>
+  {{/each}}
+</ul>
+
+{{#if showAll}}
+    <button {{action 'showAll'}}>Show All</button>
+{{/if}}

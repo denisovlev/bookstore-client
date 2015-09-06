@@ -1,0 +1,3 @@
+<strong>{{book.title}}</strong><br><br>
+<em>by</em>
+{{#link-to 'author' book.author.id class="author" bubbles=false }}{{book.author.name}}{{/link-to}}
